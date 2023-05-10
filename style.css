@@ -1,0 +1,74 @@
+.flip-card {
+    flex-wrap: wrap;
+    display: flex;
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    justify-content: space-between;
+}
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    background-color: beige;
+    color: black;
+    transform: rotateY(180deg);
+    text-align: center;
+    padding: 10px;
+}
+
+.logo {
+    height: 5px;
+    width: 5px;
+}
+.grid {
+    background-color: yellowgreen;
+    padding: 10px;
+    margin: 40px;
+}
+.upper {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.bottom {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.nav-bar {
+    display: flex;
+    background-color: brown;
+    padding: 10px;
+}
+.exact-bar a {
+    text-decoration: none;
+    color: aliceblue;
+    display: block;
+}
+.exact-bar > ul {
+    list-style-type: none;
+}
+.exact-bar > ul > li a:hover {
+    background: blue;
+    color: black;
+}
+.main {
+    background-color: burlywood;
+}
